@@ -1,3 +1,319 @@
 page-wizard {
+    ion-slide{
+     background-color: white;
+     }
+    .slide-zoom{
+        height:100%;
+    }
+    .demo-slide {
+        align-items: flex-start;
+    }
+    .quest-slide{
+        height: 100%;
+        overflow-y: scroll;
+        align-items: flex-start;
+    }
+    .nav-start {
+        position: absolute;
+        background-color: rgb(26, 39, 71);
+        width: 100%;
+        height: 4.5vw;
+        min-height: 40px;
+        z-index: 3;
+    }
+    .start {
+        font-size:20px;
+        height: 85%;
+        color: black;
+        background-color: aliceblue;
+        width: 10vw;
+        min-width: 65px;
+    }
+    #end {
+        font-size:20px ;
+        min-width: 65px;
+        width: 10vw;
+        height: 85%;
+        float:right;
+        color: black;
+        background-color: aliceblue;
+    }
+    .top-demo {
+        position: relative;
+        display: block;
+        // width: 70%;
+        margin: auto auto 50px auto;
+        font-size: 2.5vw;
+        top: 10vw;
+    }
+    .top-simple {
+        position: relative;
+        display: block;
+        // width: 70%;
+        margin: auto;
+        font-size: 2.5vw;
+        top: 10vw;
+    }
+    .top-question{
+        position: relative;
+        margin: auto auto 50px auto;
+        top: 12vw;
+    }
+    .list-header-md {
+        padding-left: 0px;
+        margin-bottom: 0px;
+        //min-height: 4rem;
+        border-top: none;
+        font-size: 1.2rem;
+        color: black; 
+    }
+    ion-badge{
+        position: relative;
+        font-size: 25px; 
+        padding: 5px;
+        margin: 0px !important;
+        top: -5px;
+    }
+    .h1{
+        font-weight: bold;
+        font-size: 20px;
+        margin-right: 5px;
+        white-space: normal;
+    } 
+    .h2 {
+        white-space: normal;
+        font-size: 20px;
+        width: 80%;
+        margin: 15px auto auto auto;
+        top: 20px;
+    }
+    img {
+       // margin-top: 10px auto auto auto;
+        display: inline;
+        box-shadow: 0px 1px 66px -4px rgba(0,0,0,0.68);
+    }
+    .demo-img{
+        width: 60%;
 
+    }
+    .select-placeholder, .select-text{
+        font-size: 20px;
+    }
+    .select-icon, .select-icon-inner  {
+        border: none!important;
+    }
+    .datetime-text, .datetime-placeholder{
+        font-size: 20px;
+    }
+    .input ::-webkit-input-placeholder{
+        font-size: 20px;
+    }
+    .input{
+        font-size: 20px;
+    }
+    .date {
+        float: left;
+    }
+    .question-header {
+        position: relative;
+    } 
+    .q-group {
+        padding: 20px auto;
+        background-color:#f7f7f7!important;
+        text-align: left;
+        font-size: 20px;        
+     }  
+    .q-group ion-label{
+        white-space: normal;
+    }
+    .q-wrapper {
+       display: flex;
+       justify-content: space-between;
+       flex-direction: row-reverse;
+       padding-left: 0px; 
+     }
+    #select {
+         float: left !important;
+     }
+    .select {
+       float: right;
+     }
+    .view{ 
+       float: right;
+     }
+    .card-wrapper {
+        max-width: 768px;
+        margin: 20px auto 0px auto;
+     }
+    #submit{
+        margin-top: -12px;
+        width: 168px;
+        height:42px;
+    }
+    #end-wizard-h{
+        white-space: normal
+    }
+    .buttons {
+        position: relative;
+        margin-top: 15vw; 
+    }
+    .button1{
+        width: 138px;
+        height:42px;
+        background-color: rgb(26, 39, 71);
+        padding: 0px;
+    }
+    .scroll-content {
+        padding-bottom: 0px!important;
+    }
+    @media screen and (min-width:768px) {
+        .nav-start{
+            height: 5.5vw;
+            max-height: 70px;
+        }
+        .start {
+            font-size:25px ;
+
+        }
+        #end {
+            font-size:25px ;
+         }
+        .button1{
+            height: 55px;
+            width: 180px;
+            font-size: 25px;
+         }
+        .select-placeholder, .select-text{
+            font-size: 25px;
+        }
+        .datetime-text, .datetime-placeholder{
+            font-size: 25px;
+        }
+        .input ::-webkit-input-placeholder{
+            font-size: 25px;
+        }
+        .input, .q-group{
+            font-size: 25px;
+        }
+        #submit{
+            font-size: 25px ;
+            width: 300px;
+            height: 55px;
+            margin: auto
+        }
+        .h1 {
+            font-size: 40px;
+        }
+        .h2 {
+            font-size: 28px;
+        }   
+
+    }
+    @media screen and (min-width: 1024px) {
+        @media screen and(orientation: portrait){
+            .button1{
+                width: 230px;
+                height: 70px;
+            }
+            .h1 {
+                font-size: 50px;
+            }
+            .h2 {
+                font-size: 38px;
+            }
+        } 
+    }
+   
+    @media screen and (max-width: 767px){
+        ion-badge{
+            font-size: 15px;
+            padding: 3px;
+        }
+        @media screen and (orientation: portrait){
+            .form{
+                margin: -10px;
+            }
+            .button1{
+                width: 50vw;
+                max-width: 500px;
+            }
+        }
+    }
+  
+    @media screen and (orientation:landscape) {
+        .demo-slide .slide-zoom {
+            display: flex;
+            align-items: center;
+        }
+        .top-simple {
+            top: auto;
+            width: 55%;
+         }
+        .top-demo{
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            margin: auto;
+            top: auto;
+        }
+        .demo-header {
+            width: 40%;
+        }
+        .demo-img{
+            width: 37%;
+            margin-left: 2.2vw;
+        } 
+        .top-question {
+            position: relative;
+            top: 80px;
+            margin-bottom: 25px;
+        } 
+        @media screen and (min-width: 1366px){
+            .button1 {
+                width: 210px;
+                height: 70px;
+                font-size: 30px;
+            }
+            .h1 {
+                font-size: 50px;
+            }
+            .h2 {
+                font-size: 38px;
+            }
+       }   
+       @media screen and (max-width: 850px) {
+            ion-badge{
+                font-size: 15px;
+                padding: 3px;
+            } 
+            .top-simple {
+                top: auto;
+                width: 80%;
+            }
+            .demo-img{
+                width: 25%;
+            }
+            .demo-header {
+                width: 55%;
+            }
+            .question-header{
+                margin: 0px;
+                top: -30px;
+            }
+            .form {
+                margin-top: -25px;
+            }
+            .inner-question-header {
+                margin: 7px auto 0px auto;
+            }    
+       }
+    }
+       
+    .invalid {
+        box-shadow: 0px 0px 10px 3px#ea6153;
+    }
+    .invalid-text {
+        font-size: 20px;
+        color: #ea6153;
+    }
 }

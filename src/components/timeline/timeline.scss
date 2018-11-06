@@ -1,0 +1,113 @@
+timeline {
+
+    h2{
+        padding-bottom: 15px;
+    }
+
+    .item-ios h2 {
+        font-size: 2rem !important;
+    }
+
+    .item-md h2 {
+        margin-left: 3%;
+    }
+
+    .timeline h1:first-child, .timeline h2:first-child, .timeline h3:first-child, .timeline h4:first-child, .timeline h5:first-child, .timeline h6:first-child {
+        margin-left: 6%;
+    }
+
+    ion-label.label.label-ios {
+        overflow: visible !important;
+    }
+    
+}
+
+.cd-timeline__img {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    z-index: 1000;
+    border-radius: 50%;
+    // -webkit-box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+    //         box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  }
+  
+
+  .cd-timeline__img.cd-timeline__img--5 {
+    background: #64c5b1;
+  }
+
+  .item-ios h2:last-child, .item-ios h3:last-child, .item-ios h4:last-child, .item-ios h5:last-child, .item-ios h6:last-child, .item-ios p:last-child {
+      padding-left: 3%;
+  }
+
+  .item-ios, .item-md{
+      background-color: transparent !important;
+      padding-left: 10px !important;
+  }
+  
+  .item-checkbox {
+      margin-left: 12%;
+  }
+
+  .button-inner {
+      flex-flow: flex;
+  }
+  .input-wrapper {
+      overflow: visible !important;
+  }
+
+.border-thingy {
+    padding-left: 5%;
+}
+.timeline {
+    margin-top: 30px;
+    margin-right: 5%;
+    padding: 0;
+    position: relative;
+    background-image: url('../assets/imgs/blueline.png');
+    background-repeat: repeat-y;
+    background-position: 6.2% top;
+
+    @media screen and (min-width:1024px){
+        background-position: 5.89% top;
+    }
+
+    @media screen and (min-width:1360px){
+        background-position: 5.7% top;
+    }
+    @media screen and (max-width:1024px){
+        background-position: 5.79% top;
+    }
+
+    .list-ios, .list-md, .item-block, .item-inner {
+        border-bottom: none !important;
+        border-top: none !important;
+        padding-right: -1px !important;
+    }
+
+    .list-ios, .list-md {
+        margin: -1px 3% 15px 0px !important;
+    }
+
+    .item-block {
+        overflow: visible !important;
+    }
+
+    .item.item-md .checkbox-md {
+        margin: -6px 17px 8px -20px !important;
+        padding-left: 4%;
+        padding-top: 2%;
+    }
+
+    .item-ios h2:last-child, .item-ios h3:last-child, .item-ios h4:last-child, .item-ios h5:last-child, .item-ios h6:last-child, .item-ios p:last-child {
+        padding-left: 5% !important;
+    }
+
+    h1:first-child,h2:first-child,h3:first-child,h4:first-child, h5:first-child, h6:first-child {
+        margin-left: 2%;
+    }
+        
+  }

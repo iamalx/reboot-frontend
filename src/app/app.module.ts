@@ -3,6 +3,7 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
+import { HttpClientModule } from '@angular/common/http';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -14,6 +15,15 @@ import { ProfilePage } from '../pages/profile/profile';
 import { TransitionPage } from '../pages/transition/transition';
 import { AssessmentPage } from '../pages/assessment/assessment';
 import { TimelinePage } from '../pages/timeline/timeline';
+import { HistoryPage } from '../pages/history/history';
+import { TimelineComponent } from '../components/timeline/timeline';
+import { TimelineItemComponent } from '../components/timeline/timeline';
+import { TimelineTimeComponent } from '../components/timeline/timeline';
+import { ChartComponent } from '../components/chart/chart';
+import { ChartProvider } from '../providers/chart/chart';
+import { UserProvider } from '../providers/user/user';
+import { IonicStorageModule } from '@ionic/storage';
+
 
 @NgModule({
   declarations: [
@@ -26,11 +36,18 @@ import { TimelinePage } from '../pages/timeline/timeline';
     ProfilePage,
     TransitionPage,
     AssessmentPage,
-    TimelinePage
+    TimelinePage,
+    HistoryPage,
+    TimelineComponent,
+    TimelineItemComponent,
+    TimelineTimeComponent,
+    ChartComponent
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    HttpClientModule,
+    IonicModule.forRoot(MyApp),
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -43,12 +60,15 @@ import { TimelinePage } from '../pages/timeline/timeline';
     ProfilePage,
     TransitionPage,
     AssessmentPage,
-    TimelinePage
+    TimelinePage,
+    HistoryPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    UserProvider,
+    ChartProvider
   ]
 })
 export class AppModule {}
